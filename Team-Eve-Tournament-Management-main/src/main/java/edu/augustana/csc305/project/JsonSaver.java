@@ -1,8 +1,6 @@
 package edu.augustana.csc305.project;
 
 import com.google.gson.Gson;
-import edu.augustana.csc305.lab4.Student;
-
 import java.io.*;
 import java.util.Arrays;
 import java.util.List;
@@ -15,10 +13,12 @@ public class JsonSaver{
             out.println(json);
         }
     }
-    
-    public List<Student> loadTournaments(File loadPath) throws IOException, ClassNotFoundException {
+
+    public List<Tournament> loadTournaments(File loadPath) throws IOException {
         Gson gson = new Gson();
-        Tournament[] tournaments = gson.fromJson(new FileReader(loadPath), Tournament[].class);
-        return Arrays.asList(tournaments);
+        try (FileReader reader = new FileReader(loadPath)) {
+            Tournament[] tournaments = gson.fromJson(reader, Tournament[].class);
+            return Arrays.asList(tournaments);
+        }
     }
 }
