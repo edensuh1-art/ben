@@ -1,0 +1,44 @@
+package edu.augustana.csc305.project;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Match {
+    private Team home;
+    private Team away;
+    private Integer assignedCourtNumber; // null = unassigned
+    private LocalDateTime scheduledStart; // null = unscheduled
+    private final Team winner; // null = no winner yet
+
+    public Match(Team home, Team away) {
+        this.home = home;
+        this.away = away;
+        this.assignedCourtNumber = null;
+        this.scheduledStart = null;
+        this.winner = null;
+    }
+    /*public Match() { // can't use this, matches must have teams assigned to be matches
+        this(null, null);
+    }*/
+
+    public Team getHome() { return home; }
+    public void setHome(Team home) { this.home = home; }
+    public Team getAway() { return away; }
+    public void setAway(Team away) { this.away = away; }
+
+    public Integer getAssignedCourtNumber() { return assignedCourtNumber; }
+    public void setAssignedCourtNumber(Integer n) { this.assignedCourtNumber = n; }
+
+    public LocalDateTime getScheduledStart() { return scheduledStart; }
+    public void setScheduledStart(LocalDateTime t) { this.scheduledStart = t; }
+
+    public Team getWinner(){ return null; } // change depending on how winner is being determind
+
+    @Override
+    public String toString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy hh:mm a");
+        String courtInfo = (assignedCourtNumber != null) ? "Court " + assignedCourtNumber : "Unassigned Court";
+        String timeInfo = (scheduledStart != null) ? formatter.format(scheduledStart) : "Unscheduled";
+        String winnerInfo = (winner != null) ? "Winner " + winner : "Match in progress or not started";
+        return home + " vs " + away + " | " + courtInfo + " | " + timeInfo + " | " + winnerInfo;
+    }
+}
