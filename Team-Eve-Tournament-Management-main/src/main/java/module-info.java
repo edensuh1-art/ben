@@ -1,4 +1,4 @@
-module edu.augustana.csc305.lab2 {
+module edu.augustana.csc305.templateproject {
     requires javafx.controls;
     requires javafx.graphics;
     requires javafx.base;
