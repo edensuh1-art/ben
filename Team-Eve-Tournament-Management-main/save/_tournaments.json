@@ -1,0 +1,206 @@
+[ "edu.augustana.csc305.project.SaveLoadService$UserFile", {
+  "username" : "",
+  "password" : "",
+  "tournaments" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Tournament", {
+    "ID" : "T1",
+    "name" : "tourney",
+    "start" : "2025-11-11T20:00:00",
+    "courts" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Court", {
+      "ID" : "T1-c1",
+      "number" : 1,
+      "referee" : null,
+      "id" : "T1-c1"
+    } ], [ "edu.augustana.csc305.project.Court", {
+      "ID" : "T1-c2",
+      "number" : 2,
+      "referee" : null,
+      "id" : "T1-c2"
+    } ] ] ],
+    "teams" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Team", {
+      "ID" : "T1-tm1",
+      "name" : "team1",
+      "mascot" : "",
+      "players" : [ "java.util.ArrayList", [ ] ],
+      "spiritRating" : 0,
+      "winScore" : 0,
+      "pointsScored" : 0,
+      "setWins" : 0,
+      "isAvailable" : true,
+      "photoUrl" : "",
+      "id" : "T1-tm1",
+      "available" : true,
+      "wins" : 0
+    } ], [ "edu.augustana.csc305.project.Team", {
+      "ID" : "T1-tm2",
+      "name" : "team2",
+      "mascot" : "",
+      "players" : [ "java.util.ArrayList", [ ] ],
+      "spiritRating" : 0,
+      "winScore" : 0,
+      "pointsScored" : 0,
+      "setWins" : 0,
+      "isAvailable" : true,
+      "photoUrl" : "",
+      "id" : "T1-tm2",
+      "available" : true,
+      "wins" : 0
+    } ], [ "edu.augustana.csc305.project.Team", {
+      "ID" : "T1-tm3",
+      "name" : "team3",
+      "mascot" : "",
+      "players" : [ "java.util.ArrayList", [ ] ],
+      "spiritRating" : 0,
+      "winScore" : 0,
+      "pointsScored" : 0,
+      "setWins" : 0,
+      "isAvailable" : true,
+      "photoUrl" : "",
+      "id" : "T1-tm3",
+      "available" : true,
+      "wins" : 0
+    } ], [ "edu.augustana.csc305.project.Team", {
+      "ID" : "T1-tm4",
+      "name" : "team4",
+      "mascot" : "",
+      "players" : [ "java.util.ArrayList", [ ] ],
+      "spiritRating" : 0,
+      "winScore" : 0,
+      "pointsScored" : 0,
+      "setWins" : 0,
+      "isAvailable" : true,
+      "photoUrl" : "",
+      "id" : "T1-tm4",
+      "available" : true,
+      "wins" : 0
+    } ] ] ],
+    "matches" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Match", {
+      "ID" : "T1-pl1-m1",
+      "homeID" : "T1-tm3",
+      "awayID" : "T1-tm2",
+      "scheduledStart" : null,
+      "category" : "None selected",
+      "set" : 1,
+      "inProgress" : false,
+      "id" : "T1-pl1-m1"
+    } ], [ "edu.augustana.csc305.project.Match", {
+      "ID" : "T1-pl2-m2",
+      "homeID" : "T1-tm1",
+      "awayID" : "T1-tm4",
+      "scheduledStart" : null,
+      "category" : "None selected",
+      "set" : 1,
+      "inProgress" : false,
+      "id" : "T1-pl2-m2"
+    } ] ] ],
+    "runningMatches" : [ "java.util.ArrayList", [ ] ],
+    "category" : "Volleyball",
+    "pools" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Pool", {
+      "ID" : "T1-pl1",
+      "teams" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Team", {
+        "ID" : "T1-tm3",
+        "name" : "team3",
+        "mascot" : "",
+        "players" : [ "java.util.ArrayList", [ ] ],
+        "spiritRating" : 0,
+        "winScore" : 0,
+        "pointsScored" : 0,
+        "setWins" : 0,
+        "isAvailable" : true,
+        "photoUrl" : "",
+        "id" : "T1-tm3",
+        "available" : true,
+        "wins" : 0
+      } ], [ "edu.augustana.csc305.project.Team", {
+        "ID" : "T1-tm2",
+        "name" : "team2",
+        "mascot" : "",
+        "players" : [ "java.util.ArrayList", [ ] ],
+        "spiritRating" : 0,
+        "winScore" : 0,
+        "pointsScored" : 0,
+        "setWins" : 0,
+        "isAvailable" : true,
+        "photoUrl" : "",
+        "id" : "T1-tm2",
+        "available" : true,
+        "wins" : 0
+      } ] ] ],
+      "teamIDs" : [ "java.util.ArrayList", [ "T1-tm3", "T1-tm2" ] ],
+      "court" : [ "edu.augustana.csc305.project.Court", {
+        "ID" : "T1-c1",
+        "number" : 1,
+        "referee" : null,
+        "id" : "T1-c1"
+      } ],
+      "matches" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Match", {
+        "ID" : "T1-pl1-m1",
+        "homeID" : "T1-tm3",
+        "awayID" : "T1-tm2",
+        "scheduledStart" : null,
+        "category" : "None selected",
+        "set" : 1,
+        "inProgress" : false,
+        "id" : "T1-pl1-m1"
+      } ] ] ],
+      "id" : "T1-pl1"
+    } ], [ "edu.augustana.csc305.project.Pool", {
+      "ID" : "T1-pl2",
+      "teams" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Team", {
+        "ID" : "T1-tm1",
+        "name" : "team1",
+        "mascot" : "",
+        "players" : [ "java.util.ArrayList", [ ] ],
+        "spiritRating" : 0,
+        "winScore" : 0,
+        "pointsScored" : 0,
+        "setWins" : 0,
+        "isAvailable" : true,
+        "photoUrl" : "",
+        "id" : "T1-tm1",
+        "available" : true,
+        "wins" : 0
+      } ], [ "edu.augustana.csc305.project.Team", {
+        "ID" : "T1-tm4",
+        "name" : "team4",
+        "mascot" : "",
+        "players" : [ "java.util.ArrayList", [ ] ],
+        "spiritRating" : 0,
+        "winScore" : 0,
+        "pointsScored" : 0,
+        "setWins" : 0,
+        "isAvailable" : true,
+        "photoUrl" : "",
+        "id" : "T1-tm4",
+        "available" : true,
+        "wins" : 0
+      } ] ] ],
+      "teamIDs" : [ "java.util.ArrayList", [ "T1-tm1", "T1-tm4" ] ],
+      "court" : [ "edu.augustana.csc305.project.Court", {
+        "ID" : "T1-c2",
+        "number" : 2,
+        "referee" : null,
+        "id" : "T1-c2"
+      } ],
+      "matches" : [ "java.util.ArrayList", [ [ "edu.augustana.csc305.project.Match", {
+        "ID" : "T1-pl2-m2",
+        "homeID" : "T1-tm1",
+        "awayID" : "T1-tm4",
+        "scheduledStart" : null,
+        "category" : "None selected",
+        "set" : 1,
+        "inProgress" : false,
+        "id" : "T1-pl2-m2"
+      } ] ] ],
+      "id" : "T1-pl2"
+    } ] ] ],
+    "id" : "T1"
+  } ] ] ],
+  "idCounters" : [ "java.util.HashMap", {
+    "match" : 2,
+    "pool" : 2,
+    "tournament" : 1,
+    "team" : 4,
+    "court" : 2,
+    "player" : 0
+  } ]
+} ]
