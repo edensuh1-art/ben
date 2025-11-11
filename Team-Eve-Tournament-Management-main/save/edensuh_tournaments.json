@@ -1,0 +1,13 @@
+[ "edu.augustana.csc305.project.SaveLoadService$UserFile", {
+  "username" : "edensuh",
+  "password" : "1",
+  "tournaments" : [ "java.util.ArrayList", [ ] ],
+  "idCounters" : [ "java.util.HashMap", {
+    "match" : 0,
+    "pool" : 0,
+    "tournament" : 0,
+    "team" : 0,
+    "court" : 0,
+    "player" : 0
+  } ]
+} ]
